@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayoutLibro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Event_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imageViewLibroNuovo"
+            android:layout_width="166dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="283dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="282dp"
+            android:layout_marginBottom="7dp"
+            android:contentDescription="@string/image_events"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titolo_libro"
+            app:srcCompat="@drawable/libro_incantato"
+            tools:srcCompat="@drawable/libro_incantato" />
+
+        <TextView
+            android:id="@+id/titolo_libro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-medium"
+            android:text=" "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="359dp"
+            android:layout_height="103dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="51dp"
+            android:layout_marginBottom="32dp"
+            android:padding="3dip"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/buttonPreferitiLibroNuovo"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+        <Button
+            android:id="@+id/buttonPreferitiLibroNuovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="66dp"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="67dp"
+            android:text="Aggiungi ai Preferiti"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="500dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="116dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="115dp"
+            android:layout_marginBottom="27dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLibroNuovo">
+
+            <Button
+                android:id="@+id/buttonPrenotazione"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Effettua Prenotazione" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

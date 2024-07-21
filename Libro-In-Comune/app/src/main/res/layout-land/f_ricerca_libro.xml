@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayoutRicercaLibro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-11dp">
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="110dp"
+            android:text="risultati della ricerca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout19"
+            app:layout_constraintTop_toBottomOf="@+id/buttonRicerca" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout19">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/RecyclerViewRicercaLibro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonRicerca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginEnd="91dp"
+            android:layout_marginBottom="39dp"
+            android:text="Effettua ricerca"
+            app:layout_constraintBottom_toTopOf="@+id/textView12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout19"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="1dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout24">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titolo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Titolo" />
+
+                <TextView
+                    android:id="@+id/autore"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Autore" />
+
+                <TextView
+                    android:id="@+id/genere"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Genere" />
+
+                <TextView
+                    android:id="@+id/casa_editrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Casa Editrice" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="70dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/titoloed"
+                    android:layout_width="166dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Titolo"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/autoreed"
+                    android:layout_width="166dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Autore"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/genereed"
+                    android:layout_width="166dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Genere"
+                    android:inputType="text" />
+
+                <EditText
+                    android:id="@+id/casaeditriceed"
+                    android:layout_width="166dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Casa Editrice"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="166dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="120dp"
+            android:layout_marginBottom="18dp"
+            android:text="Ricerca del libro"
+            app:layout_constraintBottom_toTopOf="@+id/buttonRicerca"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/linearLayout19"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayoutLibriInPrestito"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".HomePage.FragmentBenvenuto">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/Benvenuto"
+            android:layout_width="244dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="243dp"
+            android:layout_marginTop="61dp"
+            android:layout_marginEnd="244dp"
+            android:gravity="center"
+            android:text="Benvenuto in LibroInComune"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayoutDonazione"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="178dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="85dp"
+            android:text="Condizione"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/radioGroup2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup2"
+            android:layout_width="121dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="7dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout23"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout23"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout23">
+
+            <RadioButton
+                android:id="@+id/radioButtonMint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="mint" />
+
+            <RadioButton
+                android:id="@+id/radioButtonPessimo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="pessimo" />
+
+            <RadioButton
+                android:id="@+id/radioButtonBuono"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:text="buono" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonDona"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="74dp"
+            android:layout_marginEnd="151dp"
+            android:layout_marginBottom="56dp"
+            android:text=" DONA ORA!"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout23" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="269dp"
+            android:layout_marginTop="38dp"
+            android:layout_marginEnd="308dp"
+            android:layout_marginBottom="26dp"
+            android:text="MODULO DI DONAZIONE"
+            app:layout_constraintBottom_toTopOf="@+id/linearLayout23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="@+id/textView11"
+            app:layout_constraintTop_toBottomOf="@+id/textView11">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="45dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="titolo" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Autore" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Casa editrice" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editTextText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:text="Name" />
+
+                <EditText
+                    android:id="@+id/editTextText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:text="Name" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

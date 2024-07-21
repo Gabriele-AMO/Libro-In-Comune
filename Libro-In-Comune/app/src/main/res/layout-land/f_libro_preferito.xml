@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/FrameLayoutLibro"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/Event_date"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/imageViewLibroPreferito"
+            android:layout_width="146dp"
+            android:layout_height="92dp"
+            android:layout_marginStart="292dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="293dp"
+            android:contentDescription="@string/image_events"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titolo_libro"
+            app:srcCompat="@drawable/libro_incantato"
+            tools:srcCompat="@drawable/libro_incantato" />
+
+        <TextView
+            android:id="@+id/titolo_libro"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:fontFamily="sans-serif-medium"
+            android:text=" "
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewDescrizione"
+            android:layout_width="460dp"
+            android:layout_height="119dp"
+            android:layout_marginStart="135dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="136dp"
+            android:layout_marginBottom="28dp"
+            android:padding="3dip"
+            android:text=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout12" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="13dp"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDescrizione"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+            <Button
+                android:id="@+id/buttonEliminaPreferito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="Elimina Preferito" />
+
+            <Button
+                android:id="@+id/buttonPrenotaPreferito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:text="Prenota il tuo Preferito" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

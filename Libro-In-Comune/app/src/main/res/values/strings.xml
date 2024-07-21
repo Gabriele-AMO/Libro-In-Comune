@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">progetto</string>
+    <string name="convert_string">Convert</string>
+    <string name="dollars">dollars</string>
+    <string name="no_value_string">No Value</string>
+
+    <string name="password">Password</string>
+    <string name="hai_dimenticato_la_password">Password_Lost</string>
+    <string name="accedi">Accedi</string>
+    <string name="username">Username</string>
+    <string name="non_hai_un_account_registrati_qui">Register</string>
+    <string name="avatar">Avatar</string>
+    <string name="titolo">Titolo</string>
+    <string name="autore">Autore</string>
+    <string name="data">Data</string>
+    <string name="image_events" />
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="navigation_drawer_open">Apri menu</string>
+    <string name="navigation_drawer_close">Chiudi menu</string>
+    <string name="title_activity_home_page_nv">HomePageNV</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+</resources>

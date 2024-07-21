@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/idCLCrea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageViewCreazioneAccount"
+        android:layout_width="111dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="85dp"
+        android:layout_marginBottom="27dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonCreaAccount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:srcCompat="@drawable/mario"
+        tools:srcCompat="@drawable/mario" />
+
+    <Button
+        android:id="@+id/buttonCreaAccount"
+        android:layout_width="0dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="124dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginBottom="60dp"
+        android:text="Crea Account"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="124dp"
+        android:layout_marginBottom="6dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCreaAccount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Nome utente"
+                android:textAlignment="center"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Cognome utente"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="E-mail"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Numero di Telefono"
+                android:textAlignment="center" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:gravity="center"
+                android:text="Password"
+                android:textAlignment="center" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="30dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/editTextCreaNome"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="nome utente"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCreaCognome"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="cognome"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCreaEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="e-mail"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCreaNumeroTelefono"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="numero di telefono"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/editTextCreaPsw"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:ems="10"
+                android:hint="password"
+                android:inputType="textPersonName" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="131dp"
+        android:layout_marginTop="92dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="26dp"
+        android:text="Creazione Account"
+        app:layout_constraintBottom_toTopOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout9"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
